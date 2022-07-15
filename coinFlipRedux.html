@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip Redux</title>
+    <script>
+        alert('Let\'s flip a coin..');
+        let coinFlip;
+        let numberOfPlays = prompt('How many times would you like to play?');
+
+        for (let i=1; i<=numberOfPlays; i++) {
+            coinFlip = Math.round(Math.random());
+            if(!coinFlip) { 
+                console.log('Heads');
+            } else {
+                console.log('Tails');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Coin Flip Redux</h1>
+    
+</body>
+</html>
