@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coin Flip Streak Game</title>
     <script>
-        alert('Let\'s see how many times can flip a coin until you get tails...')
+        
         let coinFlip;
         do {
             coinFlip = Math.round(Math.random());
-            if(coinFlip) {
-                console.log('Heads');
+            if(!coinFlip) {
+                console.log(`${coinFlip} = Heads `);
             } else {
-                console.log('You finally got Tails');
+                console.log(`${coinFlip} = Tails `);
             }
-        } while(coinFlip);
+        } while(!coinFlip);
 
     </script>
 </head>
